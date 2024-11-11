@@ -1,0 +1,90 @@
+.logoUDG{
+  height: 5rem;
+  width: auto;
+  padding: Auto;
+  margin: .5rem;
+}
+
+.cs-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  margin: auto;
+  padding: auto;
+  gap: 1rem;
+}
+
+header{
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+  background-color: #e4e4e4;
+  color: #2780bb;
+  padding: .2rem 0 .2rem 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-div{
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: auto;
+}
+
+.header-txt{
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+}
+
+/* CSS */
+.button-63 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#195fc7, #1f59c4 50%,#ffed50);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+#login{
+  width: 100%;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
