@@ -18,18 +18,18 @@ $row = mysqli_fetch_array($resultado);
 
 if($row['privilegios']== 'admin'){
   $_SESSION['usuario'] = $_POST['usuario'];
-  header("Location: adminlog.php");
-  exit("Bienvenido $usuario");
+  $_SESSION['privilegios'] = $row['privilegios'];
+  header("Location: mkreport.php");
 }
 elseif($row['privilegios']== 'nu'){
   $_SESSION['usuario'] = $_POST['usuario'];
-  header("Location: nulog.php");
-  exit("Bienvenido $usuario");
+  $_SESSION['privilegios'] = $row['privilegios'];
+  header("Location: mkreport.php");
 }
 elseif($row['privilegios']== 'su'){
   $_SESSION['usuario'] = $_POST['usuario'];
-  header("Location: sulog.php");
-  exit("Bienvenido $usuario");
+  $_SESSION['privilegios'] = $row['privilegios'];
+  header("Location: mkreport.php");
 }
 else{
   echo "Usuario o contraseña incorrectos";

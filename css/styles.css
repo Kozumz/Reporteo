@@ -1,18 +1,9 @@
 .logoUDG{
   height: 5rem;
   width: auto;
-  padding: Auto;
+  padding-left: 1rem;
+  padding-right: 7rem;
   margin: .5rem;
-}
-
-.cs-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5rem;
-  margin: auto;
-  padding: auto;
-  gap: 1rem;
 }
 
 header{
@@ -25,14 +16,17 @@ header{
   justify-content: center;
   display: flex;
   gap: 1.5rem;
+  width: 100%;
 }
 
 .header-div{
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: auto;
 }
+
+
 
 .header-txt{
   font-weight: bold;
@@ -79,12 +73,123 @@ header{
 
 #login{
   width: 100%;
-  text-align: center;
+  margin-top: 2rem;
+  font-size:1.1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container{
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   height: 15vh;
+  
 }
+
+#usuario{
+  width: 100%;
+}
+
+#password{
+  width: 100%;
+}
+
+.button-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.submit-bt{
+  background-color: #6099ee; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding:.5rem 1rem;
+  
+}
+
+.menu-nav {
+  list-style-type: none; /* Eliminar los puntos de la lista */
+  padding: 0; /* Eliminar el padding predeterminado */
+  margin: 0; /* Eliminar el margen predeterminado */
+  display: flex; /* Usar flexbox para alinear los elementos en horizontal */
+  flex-direction: row; /* Asegurarse de que la dirección del flex sea horizontal */
+  gap: 1rem; /* Espacio entre los elementos */
+}
+
+
+.nav-item {
+  text-decoration: none; /* Eliminar el subrayado de los enlaces */
+  color: #2780bb; /* Color del texto */
+  font-family: 'Roboto', sans-serif; /* Tipo de fuente */
+  font-size: 1.2rem; /* Tamaño de la fuente */
+}
+
+nav{
+  padding-right: 2rem;
+}
+
+.report-window{
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+  }
+
+.new-report{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 3rem;
+  }
+
+#report-textarea{
+  height: 68%;
+  width: 100%; 
+  }
+
+.cordinates{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  }
+
+#view-reports-txt{
+  height: 25rem;
+  width: 40rem;
+  margin-left: 0%;
+  padding-left: 0%;
+  margin-right: 3rem;
+
+  }
+
+
+  #report-data{
+    height: 25rem;
+    width: 40rem;
+    margin-left: 0%;
+    padding-left: 0%;
+  }
+
+  .rep-input{
+    width: 100%;
+    margin-top: .3rem;
+    margin-bottom:.3rem;
+  }
+  
+  .live-rep{
+    width: 50%;
+    min-height:15rem ;
+    border: #6099ee 2px solid;
+  }
+
+  .block{
+    background-color: #ffed50;
+    width: 100%;
+    height: 800rem;
+  }
+
+  .rep-frame{
+    width: 100%;
+    height:45rem;
+  }
