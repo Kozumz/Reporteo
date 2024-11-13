@@ -16,23 +16,27 @@ $resultado = mysqli_query($conexion, $query);
 
 $row = mysqli_fetch_array($resultado);
 
-if($row['privilegios']== 'admin'){
-  $_SESSION['usuario'] = $_POST['usuario'];
-  $_SESSION['privilegios'] = $row['privilegios'];
-  header("Location: mkreport.php");
-}
-elseif($row['privilegios']== 'nu'){
-  $_SESSION['usuario'] = $_POST['usuario'];
-  $_SESSION['privilegios'] = $row['privilegios'];
-  header("Location: mkreport.php");
-}
-elseif($row['privilegios']== 'su'){
-  $_SESSION['usuario'] = $_POST['usuario'];
-  $_SESSION['privilegios'] = $row['privilegios'];
-  header("Location: mkreport.php");
-}
-else{
+if($resultado->num_rows == 0){
   echo "Usuario o contraseña incorrectos";
 }
-
+else{
+  if($row['privilegios']== 'admin'){
+    $_SESSION['usuario'] = $_POST['usuario'];
+    $_SESSION['privilegios'] = $row['privilegios'];
+    header("Location: mkreport.php");
+  }
+  elseif($row['privilegios']== 'nu'){
+    $_SESSION['usuario'] = $_POST['usuario'];
+    $_SESSION['privilegios'] = $row['privilegios'];
+    header("Location: mkreport.php");
+  }
+  elseif($row['privilegios']== 'su'){
+    $_SESSION['usuario'] = $_POST['usuario'];
+    $_SESSION['privilegios'] = $row['privilegios'];
+    header("Location: mkreport.php");
+  }
+  else{
+    echo "Usuario o contraseña incorrectos";
+  }
+}
  ?> 

@@ -11,11 +11,12 @@
 </head>
 
 <body>
-    <?php include 'header.php'; ?>
+    <?php session_start(); include 'header.php'; ?>
 
     <main>
         <div class="live-rep" ><iframe src="livereports.php" frameborder="0" class="rep-frame"></iframe></div>
     </main>
+    <script src="/Reporteo/js/useracces.js"></script>
     
 </body>
 </html>

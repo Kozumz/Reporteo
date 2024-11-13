@@ -1,6 +1,9 @@
 <link rel="stylesheet" href="/Reporteo/css/styles.css">
-<header>
 
+<header>
+    <script> 
+        priv = "<?php echo $_SESSION['privilegios']; ?>";
+    </script>
     <img src="/Reporteo/img/logo.png" class="logoUDG" aria-hidden="true" decoding="async">
     <div class="header-div">
         <h1 class="header-txt">Sistema de reportes UDG</h1>
@@ -14,7 +17,7 @@
                     <a href="/Reporteo/php/reportmanager.php" class="nav-item" id="nav-item" data-value="reportes-link" >Reportes</a>
                 </li>
                 <li>
-                    <a href="/Reporteo/index.php" class="nav-item" id="nav-item" data-value="usuarios-link">Usuarios</a>
+                    <a href="/Reporteo/php/usermanager.php" class="nav-item" id="nav-item" data-value="usuarios-link">Usuarios</a>
                 </li>
                 <li>
                     <a href="/Reporteo/index.html" class="nav-item" id="nav-item">Salir</a>
@@ -22,4 +25,6 @@
             </ul>
         </nav>
     </div>
+
+    <script src="/Reporteo/js/useracces.js"></script>
 </header>
